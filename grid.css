@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header header header' 'nav content aside' 'nav footer footer';
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+    background-color: aquamarine;
+    padding: 20px;
+    border: 1px solid steelblue;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: content;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
